@@ -1,0 +1,46 @@
+{
+  "name": "@libp2p/protocol-adventure",
+  "version": "0.0.0",
+  "description": "Learn how to develop custom protocols with libp2p",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/libp2p/js-libp2p-protocol-adventure"
+  },
+  "license": "ISC",
+  "bin": {
+    "protocol-adventure": "./index.js"
+  },
+  "scripts": {
+    "lint": "standard",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@chainsafe/libp2p-yamux": "^6.0.2",
+    "@libp2p/tcp": "^9.1.1",
+    "@libp2p/tls": "^1.1.1",
+    "cborg": "^4.2.2",
+    "chalk": "^5.3.0",
+    "it-byte-stream": "^1.0.12",
+    "it-filter": "^3.1.1",
+    "it-map": "^3.1.1",
+    "it-pipe": "^3.0.1",
+    "it-rpc": "^1.0.1",
+    "libp2p": "^1.8.0",
+    "patch-package": "^8.0.0",
+    "shortid": "^2.2.8",
+    "uint8-varint": "^2.0.4",
+    "uint8arraylist": "^2.4.8",
+    "workshopper-adventure": "^7.0.0",
+    "workshopper-boilerplate": "^1.1.2",
+    "workshopper-exercise": "^3.0.1",
+    "workshopper-verify-processor": "0.0.2",
+    "workshopper-wrappedexec": "^0.1.1"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "standard": "^17.1.0"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}

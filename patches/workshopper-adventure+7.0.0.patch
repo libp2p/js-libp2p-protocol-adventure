@@ -1,0 +1,14 @@
+diff --git a/node_modules/workshopper-adventure/lib/msee.js b/node_modules/workshopper-adventure/lib/msee.js
+index 1fcbf99..605c566 100644
+--- a/node_modules/workshopper-adventure/lib/msee.js
++++ b/node_modules/workshopper-adventure/lib/msee.js
+@@ -12,8 +12,7 @@ const mseeOptions = {
+   paragraphPad: {
+     left: ' ',
+     right: '   '
+-  },
+-  maxWidth: 78
++  }
+ }
+ 
+ module.exports = function (content) {

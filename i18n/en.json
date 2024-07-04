@@ -1,0 +1,116 @@
+{
+  "title": "libp2p protocol adventure",
+  "appname": "protocol-adventure",
+  "subtitle": "Custom protocols with libp2p",
+  "exercise": {
+    "1_hello_world": "My first libp2p node",
+    "2_streams": "AsyncGenerators, Iterables and duplex streams",
+    "3_custom_protocols": "Protocol handlers and dialers",
+    "4_imperative_protocols": "Imperative protocols",
+    "5_length_prefixed_data": "Prefixing data",
+    "6_structured_data": "Sending structured data",
+    "7_rpc": "RPC over libp2p (bonus round)"
+  },
+  "common": {
+    "exercise": {
+      "pass": {
+        "default_export_a_function": "The default export of the solution file was a function",
+        "export_a_function": "The '{{name}}' export of the solution file was a function"
+      },
+      "fail": {
+        "default_export_a_function": "The default export of the solution file was not a function",
+        "export_a_function": "The '{{name}}' export of the solution file was not a function"
+      }
+    }
+  },
+  "exercises": {
+    "1_hello_world": {
+      "pass": {
+        "node_had_connection": "Node dialed successfully"
+      },
+      "fail": {
+        "node_had_connection": "Node did not dial successfully"
+      }
+    },
+    "2_streams": {
+      "pass": {
+        "too_many_values": "The stream contained the correct number of values",
+        "incorrect_values": "The value at index {{index}} was correct"
+      },
+      "fail": {
+        "too_many_values": "The stream contained an incorrect number of values",
+        "incorrect_values": "The value at index {{index}} was incorrect"
+      }
+    },
+    "3_custom_protocols": {
+      "pass": {
+        "dial_echo": "Echoed all data back to the dialer",
+        "dial_sent_data": "The dialer wrote all data into the stream",
+        "dial_read_data": "The dialer read all data from the stream",
+        "respond_sent_data": "The responder wrote all data into the stream"
+      },
+      "fail": {
+        "dial_echo": "Could not echo all data back to the dialer",
+        "dial_sent_data": "The dialer did not write all data into the stream",
+        "dial_read_data": "The dialer did not read all data from the stream",
+        "respond_sent_data": "The responder did not write all data into the stream"
+      }
+    },
+    "4_imperative_protocols": {
+      "pass": {
+        "data_sent": "The data was sent",
+        "data_amount_sent": "The requested amount of data was sent"
+      },
+      "fail": {
+        "data_sent": "No data was sent",
+        "data_amount_sent": "The requested amount of data was not sent"
+      }
+    },
+    "5_length_prefixed_data": {
+      "pass": {
+        "data_sent": "The data was sent",
+        "data_amount_sent": "The requested amount of data was sent"
+      },
+      "fail": {
+        "data_sent": "No data was sent",
+        "data_amount_sent": "The requested amount of data was not sent"
+      }
+    },
+    "6_structured_data": {
+      "pass": {
+        "data_sent": "The data was sent",
+        "response_sent": "The response was parsable",
+        "response_type": "The response type was correct",
+        "response_value": "The response value was correct"
+      },
+      "fail": {
+        "data_sent": "No data was sent",
+        "response_sent": "Could not parse the response as CBOR",
+        "response_type": "The response type was incorrect",
+        "response_value": "The response value was incorrect"
+      }
+    },
+    "7_rpc": {
+      "pass": {
+        "finder_sent_values": "Finder sent all values",
+        "finder_invoked_progress_callback": "Finder invoked onProgress callback for each value",
+        "finder_key": "Finder sent correct key #{{index}}",
+        "finder_value": "Finder sent correct value #{{index}}",
+        "resolver_resolved_values": "Resolver resolved all values",
+        "resolver_key": "Resolver resolved correct key #{{index}}",
+        "resolver_value": "Resolver resolved correct value #{{index}}",
+        "resolver_event": "Resolver received correct event #{{index}}"
+      },
+      "fail": {
+        "finder_sent_values": "Finder did not send all values",
+        "finder_invoked_progress_callback": "Finder did not invoke onProgress callback for each value",
+        "finder_key": "Finder sent incorrect key #{{index}}",
+        "finder_value": "Finder sent incorrect value #{{index}}",
+        "resolver_resolved_values": "Resolver did not resolve all values",
+        "resolver_key": "Resolver resolved incorrect key #{{index}}",
+        "resolver_value": "Resolver resolved incorrect value #{{index}}",
+        "resolver_event": "Resolver received incorrect event #{{index}}"
+      }
+    }
+  }
+}
