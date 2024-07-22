@@ -52,7 +52,7 @@ libp2p.handle(myProtocolId, ({ stream, connection }) => {
 
 Your handler will be invoked when a remote peer opens a stream for your protocol.
 
-## Challenge
+## Challenge
 
 Write a script that exports two functions, one called `dial` and one called `respond`.
 

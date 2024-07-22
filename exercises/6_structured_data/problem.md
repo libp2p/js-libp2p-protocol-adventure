@@ -6,7 +6,7 @@ If you have a requirement for schemas you could use Protocol Buffers or even XML
 
 Now that you can send arbitrarily sized messages via libp2p streams the possibilities are (almost) endless!
 
-## Challenge
+## Challenge
 
 Write a script with a function as it's default export.
 

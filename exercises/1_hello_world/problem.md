@@ -24,7 +24,7 @@ Libp2p performs stream multiplexing over connections, this allows us to open man
 
 Some transports provide their own stream multiplexers, for others we need to configure one such as `yamux`.
 
-## Getting started
+## Getting started
 
 First we're going to install `libp2p` along with some supporting modules:
 
@@ -63,7 +63,7 @@ console.info('My node id:', node.peerId.toString())
 
 This should start the node and display the peer id.
 
-## Challenge
+## Challenge
 
 Write a script that exports a default function that takes a multiaddr as an argument.
 

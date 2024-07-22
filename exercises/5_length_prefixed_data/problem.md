@@ -42,7 +42,7 @@ const result = await bytes.read({
 })
 ```
 
-## Challenge
+## Challenge
 
 Write a script with a function as it's default export.
 

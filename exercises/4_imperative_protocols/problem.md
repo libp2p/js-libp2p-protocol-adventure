@@ -29,7 +29,7 @@ const fiveBytes = await bytes.read(5, {
 })
 ```
 
-## Challenge
+## Challenge
 
 Write a script with a function as it's default export.
 

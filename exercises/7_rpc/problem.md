@@ -4,7 +4,7 @@ The `it-rpc` module allows calling methods on a remote target over a duplex iter
 
 The only rules are that any returned values must be promises (since synchronous access would be impossible), so no property access is allowed but calling methods that return void are.  If a void method throws an error it will be
 
-## Challenge
+## Challenge
 
 Given the following interfaces:
 

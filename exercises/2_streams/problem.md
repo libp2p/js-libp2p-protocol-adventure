@@ -114,7 +114,7 @@ await pipe(
 
 There are lots of other `it-*` modules available, such as `it-first`, `it-last`, `it-filter`, `it-length`, `it-map`, `it-take`, etc.
 
-## Challenge
+## Challenge
 
 Write a script that exports a default function that takes a stream as an argument.
 
