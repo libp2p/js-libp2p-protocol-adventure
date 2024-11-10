@@ -12,7 +12,8 @@
   },
   "scripts": {
     "lint": "standard",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "test": "mocha test/*.spec.js"
   },
   "dependencies": {
     "@chainsafe/libp2p-yamux": "^7.0.1",
@@ -37,6 +38,7 @@
     "workshopper-wrappedexec": "^0.1.1"
   },
   "devDependencies": {
+    "mocha": "^10.8.2",
     "pre-commit": "^1.2.2",
     "standard": "^17.1.0"
   },

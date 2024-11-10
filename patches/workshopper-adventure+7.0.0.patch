@@ -1,3 +1,20 @@
+diff --git a/node_modules/workshopper-adventure/index.js b/node_modules/workshopper-adventure/index.js
+index 7e85fe3..0538dbe 100644
+--- a/node_modules/workshopper-adventure/index.js
++++ b/node_modules/workshopper-adventure/index.js
+@@ -79,8 +79,10 @@ function WA (options) {
+ 
+   this.options = options
+ 
+-  var globalStorage = storage(storage.userDir, '.config', 'workshopper')
+-  this.appStorage = storage(storage.userDir, '.config', options.name)
++  const storageDir = process.env.WORKSHOPPER_ADVENTURE_STORAGE_DIR ?? storage.userDir
++
++  var globalStorage = storage(storageDir, '.config', 'workshopper')
++  this.appStorage = storage(storageDir, '.config', options.name)
+ 
+   this.exercises = []
+   this._meta = {}
 diff --git a/node_modules/workshopper-adventure/lib/msee.js b/node_modules/workshopper-adventure/lib/msee.js
 index 1fcbf99..605c566 100644
 --- a/node_modules/workshopper-adventure/lib/msee.js
