@@ -10,7 +10,7 @@ export async function dial (ma, protocol, data) {
     transports: [
       tcp()
     ],
-    connectionEncryption: [
+    connectionEncrypters: [
       tls()
     ],
     streamMuxers: [
@@ -39,7 +39,7 @@ export async function respond (protocol) {
     transports: [
       tcp()
     ],
-    connectionEncryption: [
+    connectionEncrypters: [
       tls()
     ],
     streamMuxers: [

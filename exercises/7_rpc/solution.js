@@ -16,7 +16,7 @@ export async function finder (protocol) {
     transports: [
       tcp()
     ],
-    connectionEncryption: [
+    connectionEncrypters: [
       tls()
     ],
     streamMuxers: [
@@ -56,7 +56,7 @@ export async function resolver (ma, protocol) {
     transports: [
       tcp()
     ],
-    connectionEncryption: [
+    connectionEncrypters: [
       tls()
     ],
     streamMuxers: [
