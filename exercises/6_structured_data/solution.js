@@ -10,7 +10,7 @@ export default async function structuredData (ma, protocol) {
     transports: [
       tcp()
     ],
-    connectionEncryption: [
+    connectionEncrypters: [
       tls()
     ],
     streamMuxers: [

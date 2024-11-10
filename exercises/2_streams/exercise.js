@@ -12,11 +12,11 @@ exercise.addVerifyProcessor(verifyProcessor(exercise, async (test) => {
   const expected = [2, 4, 8, 0.4, 6]
 
   const stream = {
-    source: async function * () {
+    source: (async function * () {
       yield * [1, 10, 2, 59, 7, 'hello', 9, 4, {}, 0.2, 8, () => {}, 14, 3]
-    }(),
+    }()),
     sink: async function (source) {
-      for await (const val of source ) {
+      for await (const val of source) {
         output.push(val)
       }
     }

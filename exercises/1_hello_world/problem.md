@@ -50,7 +50,7 @@ const node = await createLibp2p({
   transports: [
     tcp()
   ],
-  connectionEncryption: [
+  connectionEncrypters: [
     tls()
   ],
   streamMuxers: [

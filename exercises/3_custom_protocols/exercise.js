@@ -64,11 +64,10 @@ async function testRespond (test, libp2p, respond) {
     signal: AbortSignal.timeout(1000)
   })
 
-
   const input = [
     Uint8Array.from([8, 9, 0, 1]),
     Uint8Array.from([4, 5, 6, 7]),
-    Uint8Array.from([0, 1, 2, 3]),
+    Uint8Array.from([0, 1, 2, 3])
   ]
 
   const echoed = []

@@ -1,6 +1,6 @@
 {
   "name": "@libp2p/protocol-adventure",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Learn how to develop custom protocols with libp2p",
   "repository": {
     "type": "git",
@@ -15,9 +15,9 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
-    "@chainsafe/libp2p-yamux": "^6.0.2",
-    "@libp2p/tcp": "^9.1.1",
-    "@libp2p/tls": "^1.1.1",
+    "@chainsafe/libp2p-yamux": "^7.0.1",
+    "@libp2p/tcp": "^10.0.11",
+    "@libp2p/tls": "^2.0.10",
     "cborg": "^4.2.2",
     "chalk": "^5.3.0",
     "it-byte-stream": "^1.0.12",
@@ -25,7 +25,7 @@
     "it-map": "^3.1.1",
     "it-pipe": "^3.0.1",
     "it-rpc": "^1.0.1",
-    "libp2p": "^1.8.0",
+    "libp2p": "^2.2.1",
     "patch-package": "^8.0.0",
     "shortid": "^2.2.8",
     "uint8-varint": "^2.0.4",

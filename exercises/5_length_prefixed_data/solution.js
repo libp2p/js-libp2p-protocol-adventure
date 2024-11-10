@@ -10,7 +10,7 @@ export default async function lengthPrefixedData (ma, protocol) {
     transports: [
       tcp()
     ],
-    connectionEncryption: [
+    connectionEncrypters: [
       tls()
     ],
     streamMuxers: [

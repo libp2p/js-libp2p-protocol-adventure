@@ -9,7 +9,7 @@ export default async function imperativeProtocols (ma, protocol) {
     transports: [
       tcp()
     ],
-    connectionEncryption: [
+    connectionEncrypters: [
       tls()
     ],
     streamMuxers: [

@@ -8,7 +8,7 @@ export default async function helloWorld (ma) {
     transports: [
       tcp()
     ],
-    connectionEncryption: [
+    connectionEncrypters: [
       tls()
     ],
     streamMuxers: [
