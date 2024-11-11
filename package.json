@@ -120,7 +120,7 @@
     "lint": "aegir lint",
     "postinstall": "patch-package",
     "test": "aegir test -t node",
-    "test:node": "aegir test -t node",
+    "test:node": "aegir test -t node --cov",
     "release": "aegir release"
   },
   "dependencies": {
