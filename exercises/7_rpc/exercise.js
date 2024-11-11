@@ -1,10 +1,9 @@
 const exercise = require('workshopper-exercise')()
 const verifyProcessor = require('workshopper-verify-processor')
-const path = require('path')
+const { loadSolution, loadLibp2p } = require('../../lib/utils.js')
 
 exercise.addVerifyProcessor(verifyProcessor(exercise, async (test) => {
-  const solution = path.resolve(path.join(process.cwd(), exercise.args[0]))
-  const { resolver, finder } = await import(solution)
+  const { resolver, finder } = await loadSolution(exercise.args[0])
 
   await test.truthy(typeof resolver === 'function', 'export_a_function', {
     name: 'resolver'
@@ -13,7 +12,7 @@ exercise.addVerifyProcessor(verifyProcessor(exercise, async (test) => {
     name: 'finder'
   })
 
-  const { default: libp2p } = await import(path.resolve(path.join(__dirname, '../../lib/libp2p.mjs')))
+  const libp2p = await loadLibp2p()
 
   await testFinder(test, libp2p, finder)
   await testResolver(test, libp2p, resolver)
