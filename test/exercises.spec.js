@@ -1,9 +1,11 @@
 /* eslint-env mocha */
+/* eslint-disable no-console,no-loop-func */
+'use strict'
 
 const { spawn } = require('node:child_process')
-const path = require('node:path')
-const os = require('node:os')
 const fs = require('node:fs')
+const os = require('node:os')
+const path = require('node:path')
 const menu = require('../exercises/menu.json')
 
 function makeConfigDir () {
