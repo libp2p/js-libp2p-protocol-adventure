@@ -49,7 +49,7 @@ describe('protocol-adventure', () => {
     it(`should pass ${exercise}`, async () => {
       selectExercise(exercise, configDir)
 
-      const verify = spawn('protocol-adventure', ['verify', `exercises/${exercise}/solution.mjs`], {
+      const verify = spawn('npx', ['protocol-adventure', 'verify', `exercises/${exercise}/solution.mjs`], {
         env: {
           ...process.env,
           WORKSHOPPER_ADVENTURE_STORAGE_DIR: configDir
