@@ -1,10 +1,9 @@
 const exercise = require('workshopper-exercise')()
 const verifyProcessor = require('workshopper-verify-processor')
-const path = require('path')
+const { loadSolution } = require('../../lib/utils.js')
 
 exercise.addVerifyProcessor(verifyProcessor(exercise, async (test) => {
-  const solution = path.resolve(path.join(process.cwd(), exercise.args[0]))
-  const { default: fn } = await import(solution)
+  const { default: fn } = await loadSolution(exercise.args[0])
 
   await test.truthy(typeof fn === 'function', 'default_export_a_function')
 
