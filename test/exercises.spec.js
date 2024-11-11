@@ -1,5 +1,5 @@
 /* eslint-env mocha */
-/* eslint-disable no-console,no-loop-func */
+/* eslint-disable no-loop-func */
 'use strict'
 
 const { spawn } = require('node:child_process')
@@ -49,22 +49,13 @@ describe('protocol-adventure', () => {
     it(`should pass ${exercise}`, async () => {
       selectExercise(exercise, configDir)
 
-      const verify = spawn('npx', ['protocol-adventure', 'verify', `exercises/${exercise}/solution.mjs`], {
+      const solution = path.resolve(__dirname, '..', 'exercises', exercise, 'solution.mjs')
+      const verify = spawn('node', ['index.js', 'verify', solution], {
         env: {
           ...process.env,
           WORKSHOPPER_ADVENTURE_STORAGE_DIR: configDir
-        }
-      })
-
-      let stdout = ''
-      let stderr = ''
-
-      verify.stdout.on('data', (data) => {
-        stdout += data.toString()
-      })
-
-      verify.stderr.on('data', (data) => {
-        stderr += data.toString()
+        },
+        stdio: 'inherit'
       })
 
       await new Promise((resolve, reject) => {
@@ -72,12 +63,6 @@ describe('protocol-adventure', () => {
           if (code === 0) {
             resolve()
           } else {
-            console.error('--- STDOUT ---')
-            console.error(stdout)
-
-            console.error('--- STDERR ---')
-            console.error(stderr)
-
             reject(new Error(`Failed to verify solution to ${exercise} - child process exited with code ${code}`))
           }
         })
