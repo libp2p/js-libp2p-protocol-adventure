@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/libp2p/js-libp2p-protocol-adventure/compare/v1.0.0...v1.0.1) (2024-11-19)
+
+### Bug Fixes
+
+* include exercises in npm tarball ([#5](https://github.com/libp2p/js-libp2p-protocol-adventure/issues/5)) ([453e885](https://github.com/libp2p/js-libp2p-protocol-adventure/commit/453e885e7bf8d7f507c3ef4c3e1f393912c0923e)), closes [#4](https://github.com/libp2p/js-libp2p-protocol-adventure/issues/4)
+
 ## 1.0.0 (2024-11-11)
 
 ### Features
