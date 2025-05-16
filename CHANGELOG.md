@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/libp2p/js-libp2p-protocol-adventure/compare/v1.0.1...v1.0.2) (2025-05-16)
+
+### Dependencies
+
+* bump it-byte-stream from 1.1.1 to 2.0.2 ([#11](https://github.com/libp2p/js-libp2p-protocol-adventure/issues/11)) ([059531c](https://github.com/libp2p/js-libp2p-protocol-adventure/commit/059531c36f1e055f6378502ab3fb6f781d3abe50))
+* bump it-length-prefixed-stream from 1.2.1 to 2.0.2 ([#10](https://github.com/libp2p/js-libp2p-protocol-adventure/issues/10)) ([d1354c3](https://github.com/libp2p/js-libp2p-protocol-adventure/commit/d1354c3b0c6eaac9ed1c6bfc07b9f37989dc63b4))
+* **dev:** bump aegir from 45.2.1 to 46.0.2 ([#13](https://github.com/libp2p/js-libp2p-protocol-adventure/issues/13)) ([ac13d50](https://github.com/libp2p/js-libp2p-protocol-adventure/commit/ac13d50584fdd5228f5255f1ce72b171f045cb7b))
+
 ## [1.0.1](https://github.com/libp2p/js-libp2p-protocol-adventure/compare/v1.0.0...v1.0.1) (2024-11-19)
 
 ### Bug Fixes
